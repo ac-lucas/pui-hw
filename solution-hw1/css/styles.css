@@ -1,12 +1,18 @@
-html, body, h1, p {
-  font-family:Arial, Helvetica, sans-serif;
+html,
+body,
+h1,
+p {
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   height: 100%;
 }
 
-p, label {
+p,
+label {
   font-size: 20px;
 }
+
+/* navigation */
 
 .navbar {
   display: flex;
@@ -45,13 +51,15 @@ p, label {
 .navbar-divider {
   border: 2px solid black;
   margin-top: 40px;
- margin-right: -7px;
+  margin-right: -7px;
 }
 
 .navbar-title {
   margin-top: 70px;
   margin-right: 250px
 }
+
+/* main content */
 
 .row {
   display: flex;
@@ -63,12 +71,13 @@ p, label {
   margin: 20px 70px 10px 0px;
 }
 
+/* card style */
+
 .card-image {
   width: 300px;
   height: 300px;
   border: 2px solid black;
 }
-
 
 button {
   cursor: pointer;
@@ -86,6 +95,8 @@ select {
   font-size: 20px;
   border: 2px solid black;
 }
+
+/* pack size */
 
 .card-size {
   display: flex;
@@ -112,6 +123,8 @@ select {
 .selected {
   background-color: #c7c7c7;
 }
+
+/* price */
 
 .card-price {
   display: flex;
