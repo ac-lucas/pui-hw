@@ -11,290 +11,262 @@
 <body>
 
   <div class="navbar">
-    <img class="navbar" src="assets/logo-01.svg" alt="bun bun bake shop cinnamon roll logo">
-    <div class="navbarlinks">
-      <a href="">PRODUCTS</a>
-      <a href="">CART</a>
+    <div class="navbar-left">
+      <img class="navbar-img" src="assets/logo-01.svg" alt="bun bun bake shop cinnamon roll logo">
     </div>
-    <hr class="solid">
+    <div class="navbar-right">
+      <div class="navbar-links">
+        <a href="" id="selected-link">PRODUCTS</a>
+        <a href="">CART</a>
+      </div>
+      <hr class="navbar-divider">
+      <div class="navbar-title">
+        <h1>Our hand-made cinnamon rolls</h1>
+      </div>
+    </div>
 
   </div>
 
-  <h1>Our hand-made cinnamon rolls</h1>
 
-
-  <div class="row">
+  <div class="cards row">
     <div class="column">
-  <!--card snippet from https://www.w3schools.com/howto/howto_css_cards.asp-->
-  <div class="card">
-    <img src="img_avatar.png" alt="Avatar">
-    <div class="container">
-      <h4><b>Original cinnamon roll</b></h4>
-      <label>Glazing: </label>
-      <select>
-        <option value="Keep original"> Keep original</option>
-        <option value="Sugar milk"> Sugar milk</option>
-        <option value="Vanilla milk"> Vanilla milk</option>
-        <option value="Double chocolate"> Double chocolate</option>
-      </select>
-
-      <!--radio button style from https://www.markheath.net/post/customize-radio-button-css-->
-      <div class="select">
-        <div class="selectlabel">
-          <label>Pack size: </label>
-        </div>
-        <div class="radio-toolbar">
-          <input type="radio" id="radio1" name="radioSelect1" value="1" checked>
-          <label for="radio1">1</label>
-
-          <input type="radio" id="radio3" name="radioSelect1" value="3">
-          <label for="radio3">3</label>
-
-          <input type="radio" id="radio6" name="radioSelect1" value="6">
-          <label for="radio6">6</label>
-
-          <input type="radio" id="radio12" name="radioSelect1" value="12">
-          <label for="radio12">12</label>
-
-        </div>
+        <img class="card-image" src="assets/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+      <div class="card-title">
+        <h2>Original cinnamon roll</h2>
       </div>
+      <div class="card-glazing">
+        <label for="glazing">Glazing:</label>
+        <select name="glazing" id="glazing">
+          <option value="Keep original" selected>Keep original</option>
+          <option value="Sugar milk">Sugar milk</option>
+          <option value="Vanilla milk">Vanilla milk</option>
+          <option value="Double chocolate">Double chocolate</option>
+        </select>
 
-      <div class="price">
-        <h2>$ 2.49</h2>
-        <button type="button">Add to Cart</button>
+      </div>
+      <div class="card-size">
+        <div class="card-size-title">
+          <p>Pack size: </p>
+        </div>
+        <div class="card-size-squares">
+          <button type="button" id="selected">1</button>
+          <button type="button">3</button>
+          <button type="button">6</button>
+          <button type="button" id="double">12</button>
+        </div>
 
+      </div>
+      <div class="card-price">
+        <div class="card-price-left">
+          <p>$ 2.49</p>
+        </div>
+        <div class="card-price-right">
+          <button type="button">Add to Cart</button>
+        </div>
       </div>
 
     </div>
-    </div>
-  </div>
-
-  <div class="column">
-  <div class="card">
-    <img src="img_avatar.png" alt="Avatar">
-    <div class="container">
-      <h4><b>Original cinnamon roll</b></h4>
-      <label>Glazing: </label>
-      <select>
-        <option value="Keep original"> Keep original</option>
-        <option value="Sugar milk"> Sugar milk</option>
-        <option value="Vanilla milk"> Vanilla milk</option>
-        <option value="Double chocolate"> Double chocolate</option>
-      </select>
-
-      <!--radio button style from https://www.markheath.net/post/customize-radio-button-css-->
-      <div class="select">
-        <div class="selectlabel">
-          <label>Pack size: </label>
-        </div>
-        <div class="radio-toolbar">
-          <input type="radio" id="radio1" name="radioSelect2" value="1" checked>
-          <label for="radio1">1</label>
-
-          <input type="radio" id="radio3" name="radioSelect2" value="3">
-          <label for="radio3">3</label>
-
-          <input type="radio" id="radio6" name="radioSelect2" value="6">
-          <label for="radio6">6</label>
-
-          <input type="radio" id="radio12" name="radioSelect2" value="12">
-          <label for="radio12">12</label>
-
-        </div>
-      </div>
-
-      <div class="price">
-        <h2>$ 2.49</h2>
-        <button type="button">Add to Cart</button>
-
-      </div>
-
-    </div>
-    </div>
-  </div>
-
-  <div class="column">
-  <div class="card">
-    <img src="img_avatar.png" alt="Avatar">
-    <div class="container">
-      <h4><b>Original cinnamon roll</b></h4>
-      <label>Glazing: </label>
-      <select>
-        <option value="Keep original"> Keep original</option>
-        <option value="Sugar milk"> Sugar milk</option>
-        <option value="Vanilla milk"> Vanilla milk</option>
-        <option value="Double chocolate"> Double chocolate</option>
-      </select>
-
-      <!--radio button style from https://www.markheath.net/post/customize-radio-button-css-->
-      <div class="select">
-        <div class="selectlabel">
-          <label>Pack size: </label>
-        </div>
-        <div class="radio-toolbar">
-          <input type="radio" id="radio1" name="radioSelect3" value="1" checked>
-          <label for="radio1">1</label>
-
-          <input type="radio" id="radio3" name="radioSelect3" value="3">
-          <label for="radio3">3</label>
-
-          <input type="radio" id="radio6" name="radioSelect3" value="6">
-          <label for="radio6">6</label>
-
-          <input type="radio" id="radio12" name="radioSelect3" value="12">
-          <label for="radio12">12</label>
-
-        </div>
-      </div>
-
-      <div class="price">
-        <h2>$ 2.49</h2>
-        <button type="button">Add to Cart</button>
-
-      </div>
-
-    </div>
-  </div>
-  </div>
-  </div>
-
-  <div class="row">
     <div class="column">
-  <div class="card">
-    <img src="img_avatar.png" alt="Avatar">
-    <div class="container">
-      <h4><b>Original cinnamon roll</b></h4>
-      <label>Glazing: </label>
-      <select>
-        <option value="Keep original"> Keep original</option>
-        <option value="Sugar milk"> Sugar milk</option>
-        <option value="Vanilla milk"> Vanilla milk</option>
-        <option value="Double chocolate"> Double chocolate</option>
-      </select>
+  
+        <img class="card-image" src="assets/apple-cinnamon-roll.jpg" alt="apple cinnamon roll">
 
-      <!--radio button style from https://www.markheath.net/post/customize-radio-button-css-->
-      <div class="select">
-        <div class="selectlabel">
-          <label>Pack size: </label>
+      <div class="card-title">
+        <h2>Apple cinnamon roll</h2>
+      </div>
+      <div class="card-glazing">
+        <label for="glazing">Glazing:</label>
+        <select name="glazing" id="glazing">
+          <option value="Keep original" selected>Keep original</option>
+          <option value="Sugar milk">Sugar milk</option>
+          <option value="Vanilla milk">Vanilla milk</option>
+          <option value="Double chocolate">Double chocolate</option>
+        </select>
+
+      </div>
+      <div class="card-size">
+        <div class="card-size-title">
+          <p>Pack size: </p>
         </div>
-        <div class="radio-toolbar">
-          <input type="radio" id="radio1" name="radioSelect4" value="1" checked>
-          <label for="radio1">1</label>
+        <div class="card-size-squares">
+          <button type="button" id="selected">1</button>
+          <button type="button">3</button>
+          <button type="button">6</button>
+          <button type="button">12</button>
+        </div>
 
-          <input type="radio" id="radio3" name="radioSelect4" value="3">
-          <label for="radio3">3</label>
-
-          <input type="radio" id="radio6" name="radioSelect4" value="6">
-          <label for="radio6">6</label>
-
-          <input type="radio" id="radio12" name="radioSelect4" value="12">
-          <label for="radio12">12</label>
-
+      </div>
+      <div class="card-price">
+        <div class="card-price-left">
+          <p>$ 3.49</p>
+        </div>
+        <div class="card-price-right">
+          <button type="button">Add to Cart</button>
         </div>
       </div>
 
-      <div class="price">
-        <h2>$ 2.49</h2>
-        <button type="button">Add to Cart</button>
+    </div>
+    <div class="column">
+        <img class="card-image" src="assets/raisin-cinnamon-roll.jpg" alt="raisin cinnamon roll">
 
+      <div class="card-title">
+        <h2>Raisin cinnamon roll</h2>
+      </div>
+      <div class="card-glazing">
+        <label for="glazing">Glazing:</label>
+        <select name="glazing" id="glazing">
+          <option value="Keep original" selected>Keep original</option>
+          <option value="Sugar milk">Sugar milk</option>
+          <option value="Vanilla milk">Vanilla milk</option>
+          <option value="Double chocolate">Double chocolate</option>
+        </select>
+
+      </div>
+      <div class="card-size">
+        <div class="card-size-title">
+          <p>Pack size: </p>
+        </div>
+        <div class="card-size-squares">
+          <button type="button" id="selected">1</button>
+          <button type="button">3</button>
+          <button type="button">6</button>
+          <button type="button">12</button>
+        </div>
+
+      </div>
+      <div class="card-price">
+        <div class="card-price-left">
+          <p>$ 2.99</p>
+        </div>
+        <div class="card-price-right">
+          <button type="button">Add to Cart</button>
+        </div>
       </div>
 
     </div>
-    </div>
+
   </div>
 
-  <div class="column">
-  <div class="card">
-    <img src="img_avatar.png" alt="Avatar">
-    <div class="container">
-      <h4><b>Original cinnamon roll</b></h4>
-      <label>Glazing: </label>
-      <select>
-        <option value="Keep original"> Keep original</option>
-        <option value="Sugar milk"> Sugar milk</option>
-        <option value="Vanilla milk"> Vanilla milk</option>
-        <option value="Double chocolate"> Double chocolate</option>
-      </select>
+  <div class="cards row">
+    <div class="column">
+  
+        <img class="card-image" src="assets/walnut-cinnamon-roll.jpg" alt="walnut cinnamon roll">
 
-      <!--radio button style from https://www.markheath.net/post/customize-radio-button-css-->
-      <div class="select">
-        <div class="selectlabel">
-          <label>Pack size: </label>
+      <div class="card-title">
+        <h2>Walnut cinnamon roll</h2>
+      </div>
+      <div class="card-glazing">
+        <label for="glazing">Glazing:</label>
+        <select name="glazing" id="glazing">
+          <option value="Keep original" selected>Keep original</option>
+          <option value="Sugar milk">Sugar milk</option>
+          <option value="Vanilla milk">Vanilla milk</option>
+          <option value="Double chocolate">Double chocolate</option>
+        </select>
+
+      </div>
+      <div class="card-size">
+        <div class="card-size-title">
+          <p>Pack size: </p>
         </div>
-        <div class="radio-toolbar">
-          <input type="radio" id="radio1" name="radioSelect5" value="1" checked>
-          <label for="radio1">1</label>
+        <div class="card-size-squares">
+          <button type="button" id="selected">1</button>
+          <button type="button">3</button>
+          <button type="button">6</button>
+          <button type="button">12</button>
+        </div>
 
-          <input type="radio" id="radio3" name="radioSelect5" value="3">
-          <label for="radio3">3</label>
-
-          <input type="radio" id="radio6" name="radioSelect5" value="6">
-          <label for="radio6">6</label>
-
-          <input type="radio" id="radio12" name="radioSelect5" value="12">
-          <label for="radio12">12</label>
-
+      </div>
+      <div class="card-price">
+        <div class="card-price-left">
+          <p>$ 3.49</p>
+        </div>
+        <div class="card-price-right">
+          <button type="button">Add to Cart</button>
         </div>
       </div>
 
-      <div class="price">
-        <h2>$ 2.49</h2>
-        <button type="button">Add to Cart</button>
+    </div>
+    <div class="column">
 
+        <img class="card-image" src="assets/double-chocolate-cinnamon-roll.jpg" alt="double-chocolate cinnamon roll">
+
+      <div class="card-title">
+        <h2>Double-chocolate cinnamon roll</h2>
+      </div>
+      <div class="card-glazing">
+        <label for="glazing">Glazing:</label>
+        <select name="glazing" id="glazing">
+          <option value="Keep original" selected>Keep original</option>
+          <option value="Sugar milk">Sugar milk</option>
+          <option value="Vanilla milk">Vanilla milk</option>
+          <option value="Double chocolate">Double chocolate</option>
+        </select>
+
+      </div>
+      <div class="card-size">
+        <div class="card-size-title">
+          <p>Pack size: </p>
+        </div>
+        <div class="card-size-squares">
+          <button type="button" id="selected">1</button>
+          <button type="button">3</button>
+          <button type="button">6</button>
+          <button type="button">12</button>
+        </div>
+
+      </div>
+      <div class="card-price">
+        <div class="card-price-left">
+          <p>$ 3.99</p>
+        </div>
+        <div class="card-price-right">
+          <button type="button">Add to Cart</button>
+        </div>
       </div>
 
     </div>
+    <div class="column">
+        <img class="card-image" src="assets/strawberry-cinnamon-roll.jpg" alt="Strawberry cinnamon roll">
+
+      <div class="card-title">
+        <h2>Strawberry cinnamon roll</h2>
+      </div>
+      <div class="card-glazing">
+        <label for="glazing">Glazing:</label>
+        <select name="glazing" id="glazing">
+          <option value="Keep original" selected>Keep original</option>
+          <option value="Sugar milk">Sugar milk</option>
+          <option value="Vanilla milk">Vanilla milk</option>
+          <option value="Double chocolate">Double chocolate</option>
+        </select>
+
+      </div>
+      <div class="card-size">
+        <div class="card-size-title">
+          <p>Pack size: </p>
+        </div>
+        <div class="card-size-squares">
+          <button type="button" id="selected">1</button>
+          <button type="button">3</button>
+          <button type="button">6</button>
+          <button type="button">12</button>
+        </div>
+
+      </div>
+      <div class="card-price">
+        <div class="card-price-left">
+          <p>$ 3.99</p>
+        </div>
+        <div class="card-price-right">
+          <button type="button">Add to Cart</button>
+        </div>
+      </div>
+
     </div>
+
   </div>
-
-  <div class="column">
-  <div class="card">
-    <img src="img_avatar.png" alt="Avatar">
-    <div class="container">
-      <h4><b>Original cinnamon roll</b></h4>
-      <label>Glazing: </label>
-      <select>
-        <option value="Keep original"> Keep original</option>
-        <option value="Sugar milk"> Sugar milk</option>
-        <option value="Vanilla milk"> Vanilla milk</option>
-        <option value="Double chocolate"> Double chocolate</option>
-      </select>
-
-      <!--radio button style from https://www.markheath.net/post/customize-radio-button-css-->
-      <div class="select">
-        <div class="selectlabel">
-          <label>Pack size: </label>
-        </div>
-        <div class="radio-toolbar">
-          <input type="radio" id="radio1" name="radioSelect6" value="1" checked>
-          <label for="radio1">1</label>
-
-          <input type="radio" id="radio3" name="radioSelect6" value="3">
-          <label for="radio3">3</label>
-
-          <input type="radio" id="radio6" name="radioSelect6" value="6">
-          <label for="radio6">6</label>
-
-          <input type="radio" id="radio12" name="radioSelect6" value="12">
-          <label for="radio12">12</label>
-
-        </div>
-      </div>
-
-      <div class="price">
-        <h2>$ 2.49</h2>
-        <button type="button">Add to Cart</button>
-
-      </div>
-
-    </div>
-    </div>
-  </div>
-  </div>
-
 
 
 </body>
-
 
 </html>
