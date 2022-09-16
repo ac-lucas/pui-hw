@@ -17,7 +17,7 @@ label {
 .navbar {
   display: flex;
   margin-bottom: 50px;
-  margin-top: 30px;
+  margin-top: 70px;
   justify-content: space-between;
 }
 
@@ -42,6 +42,7 @@ label {
   font-size: 25px;
 }
 
+
 #selected-link {
   background: yellow;
   font-weight: bold;
@@ -59,11 +60,32 @@ label {
   margin-right: 250px
 }
 
+.cart-items {
+  right: 0;
+  text-align: end;
+  margin-right: 85px;
+  position: absolute;
+}
+
+.cart-popup {
+  background-color: white;
+  border: 1px solid black;
+  right: 0;
+  position: absolute;
+  margin-right: 85px;
+  z-index: 9;
+  padding: 5px 5px 5px 5px;
+}
+
+.cart-popup-name {
+  font-weight: bold;
+}
+
 /* main content */
 
 .row {
   display: flex;
-  margin-left: 70px;
+  margin-left: 50px;
 }
 
 .column {
@@ -134,7 +156,7 @@ select {
 }
 
 .card-price-left {
-  margin-right: 50px;
+  margin-right: 36px;
 }
 
 .card-price-left p {

@@ -27,6 +27,14 @@
         <a href="">CART</a>
       </div>
 
+      <div class="cart-items">
+      </div>
+
+      <div class="cart-popup">
+        <div class="cart-popup-name">
+        </div>
+      </div>
+
       <hr class="navbar-divider">
 
       <div class="navbar-title">
@@ -42,7 +50,7 @@
 
   <div class="cards row">
 
-    <div class="column">
+    <div class="column" id="original">
       <img class="card-image" src="assets/original-cinnamon-roll.jpg" alt="original cinnamon roll">
 
       <div class="card-title">
@@ -52,10 +60,6 @@
       <div class="card-glazing">
         <label for="glazing1">Glazing:</label>
         <select name="glazing" id="glazing1">
-          <option value="Keep original" selected>Keep original</option>
-          <option value="Sugar milk">Sugar milk</option>
-          <option value="Vanilla milk">Vanilla milk</option>
-          <option value="Double chocolate">Double chocolate</option>
         </select>
       </div>
 
@@ -64,10 +68,10 @@
           <p>Pack size: </p>
         </div>
         <div class="card-size-squares">
-          <button type="button" class="selected">1</button>
-          <button type="button">3</button>
-          <button type="button">6</button>
-          <button type="button">12</button>
+          <button type="button" class="button-1 selected">1</button>
+          <button type="button" class="button-3">3</button>
+          <button type="button" class="button-6">6</button>
+          <button type="button" class="button-12">12</button>
         </div>
       </div>
 
@@ -82,7 +86,7 @@
 
     </div>
 
-    <div class="column">
+    <div class="column" id="apple">
       <img class="card-image" src="assets/apple-cinnamon-roll.jpg" alt="apple cinnamon roll">
 
       <div class="card-title">
@@ -92,10 +96,6 @@
       <div class="card-glazing">
         <label for="glazing2">Glazing:</label>
         <select name="glazing" id="glazing2">
-          <option value="Keep original" selected>Keep original</option>
-          <option value="Sugar milk">Sugar milk</option>
-          <option value="Vanilla milk">Vanilla milk</option>
-          <option value="Double chocolate">Double chocolate</option>
         </select>
       </div>
 
@@ -104,10 +104,10 @@
           <p>Pack size: </p>
         </div>
         <div class="card-size-squares">
-          <button type="button" class="selected">1</button>
-          <button type="button">3</button>
-          <button type="button">6</button>
-          <button type="button">12</button>
+          <button type="button" class="button-1 selected">1</button>
+          <button type="button" class="button-3">3</button>
+          <button type="button" class="button-6">6</button>
+          <button type="button" class="button-12">12</button>
         </div>
       </div>
 
@@ -122,7 +122,7 @@
 
     </div>
 
-    <div class="column">
+    <div class="column" id="raisin">
       <img class="card-image" src="assets/raisin-cinnamon-roll.jpg" alt="raisin cinnamon roll">
 
       <div class="card-title">
@@ -132,10 +132,6 @@
       <div class="card-glazing">
         <label for="glazing3">Glazing:</label>
         <select name="glazing" id="glazing3">
-          <option value="Keep original" selected>Keep original</option>
-          <option value="Sugar milk">Sugar milk</option>
-          <option value="Vanilla milk">Vanilla milk</option>
-          <option value="Double chocolate">Double chocolate</option>
         </select>
       </div>
 
@@ -144,10 +140,10 @@
           <p>Pack size: </p>
         </div>
         <div class="card-size-squares">
-          <button type="button" class="selected">1</button>
-          <button type="button">3</button>
-          <button type="button">6</button>
-          <button type="button">12</button>
+          <button type="button" class="button-1 selected">1</button>
+          <button type="button" class="button-3">3</button>
+          <button type="button" class="button-6">6</button>
+          <button type="button" class="button-12">12</button>
         </div>
       </div>
 
@@ -164,7 +160,7 @@
 
   </div>
 
-  <div class="cards row">
+  <div class="cards row" id="walnut">
 
     <div class="column">
       <img class="card-image" src="assets/walnut-cinnamon-roll.jpg" alt="walnut cinnamon roll">
@@ -176,10 +172,6 @@
       <div class="card-glazing">
         <label for="glazing4">Glazing:</label>
         <select name="glazing" id="glazing4">
-          <option value="Keep original" selected>Keep original</option>
-          <option value="Sugar milk">Sugar milk</option>
-          <option value="Vanilla milk">Vanilla milk</option>
-          <option value="Double chocolate">Double chocolate</option>
         </select>
       </div>
 
@@ -188,10 +180,10 @@
           <p>Pack size: </p>
         </div>
         <div class="card-size-squares">
-          <button type="button" class="selected">1</button>
-          <button type="button">3</button>
-          <button type="button">6</button>
-          <button type="button">12</button>
+          <button type="button" class="button-1 selected">1</button>
+          <button type="button" class="button-3">3</button>
+          <button type="button" class="button-6">6</button>
+          <button type="button" class="button-12">12</button>
         </div>
       </div>
 
@@ -206,7 +198,7 @@
 
     </div>
 
-    <div class="column">
+    <div class="column" id="chocolate">
       <img class="card-image" src="assets/double-chocolate-cinnamon-roll.jpg" alt="double-chocolate cinnamon roll">
 
       <div class="card-title">
@@ -216,10 +208,6 @@
       <div class="card-glazing">
         <label for="glazing5">Glazing:</label>
         <select name="glazing" id="glazing5">
-          <option value="Keep original" selected>Keep original</option>
-          <option value="Sugar milk">Sugar milk</option>
-          <option value="Vanilla milk">Vanilla milk</option>
-          <option value="Double chocolate">Double chocolate</option>
         </select>
       </div>
 
@@ -228,10 +216,10 @@
           <p>Pack size: </p>
         </div>
         <div class="card-size-squares">
-          <button type="button" class="selected">1</button>
-          <button type="button">3</button>
-          <button type="button">6</button>
-          <button type="button">12</button>
+          <button type="button" class="button-1 selected">1</button>
+          <button type="button" class="button-3">3</button>
+          <button type="button" class="button-6">6</button>
+          <button type="button" class="button-12">12</button>
         </div>
       </div>
 
@@ -246,7 +234,7 @@
 
     </div>
 
-    <div class="column">
+    <div class="column" id="strawberry">
       <img class="card-image" src="assets/strawberry-cinnamon-roll.jpg" alt="Strawberry cinnamon roll">
 
       <div class="card-title">
@@ -256,10 +244,6 @@
       <div class="card-glazing">
         <label for="glazing6">Glazing:</label>
         <select name="glazing" id="glazing6">
-          <option value="Keep original" selected>Keep original</option>
-          <option value="Sugar milk">Sugar milk</option>
-          <option value="Vanilla milk">Vanilla milk</option>
-          <option value="Double chocolate">Double chocolate</option>
         </select>
       </div>
 
@@ -268,10 +252,10 @@
           <p>Pack size: </p>
         </div>
         <div class="card-size-squares">
-          <button type="button" class="selected">1</button>
-          <button type="button">3</button>
-          <button type="button">6</button>
-          <button type="button">12</button>
+          <button type="button" class="button-1 selected">1</button>
+          <button type="button" class="button-3">3</button>
+          <button type="button" class="button-6">6</button>
+          <button type="button" class="button-12">12</button>
         </div>
       </div>
 
