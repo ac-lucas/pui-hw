@@ -17,7 +17,7 @@ label {
 .navbar {
   display: flex;
   margin-bottom: 50px;
-  margin-top: 70px;
+  margin-top: 30px;
   justify-content: space-between;
 }
 
@@ -74,11 +74,6 @@ label {
   position: absolute;
   margin-right: 85px;
   z-index: 9;
-  padding: 5px 5px 5px 5px;
-}
-
-.cart-popup-name {
-  font-weight: bold;
 }
 
 /* main content */
