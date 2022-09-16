@@ -33,7 +33,8 @@ class Roll {
         this.selectGlazingDropdown();
 
         // remove gray from selected box
-        const removePackSelect = this.element.querySelector('.card-size-squares');
+        const removePackSelect = 
+            this.element.querySelector('.card-size-squares');
         removePackSelect.onclick = this.selectPackSize.bind(this);
 
         // add gray to selected box
@@ -47,13 +48,15 @@ class Roll {
         updatePrice.onchange = this.updateElement.bind(this);
 
         // add items to cart
-        const addToCart = this.element.querySelector('.card-price-right > button');
+        const addToCart = 
+            this.element.querySelector('.card-price-right > button');
         addToCart.onclick = this.addItemToCart.bind(this);
 
     }
 
     updateElement() {
-        const currentPrice = this.element.querySelector('.card-price-left > p');
+        const currentPrice = 
+            this.element.querySelector('.card-price-left > p');
         this.findSelectedPrice();
         this.calculatePrice();
         // update listed price
@@ -75,8 +78,10 @@ class Roll {
 
         // referenced from https://www.geeksforgeeks.org/how-to-create-a-dropdown-list-with-array-values-using-javascript/
 
-        const priceAdaptions = [originalGlazing, sugarGlazing, vanillaGlazing, chocolateGlazing];
-        const glazeNames = ["Keep original", "Sugar milk", "Vanilla milk", "Double chocolate"]
+        const priceAdaptions = [originalGlazing, sugarGlazing, 
+            vanillaGlazing, chocolateGlazing];
+        const glazeNames = ["Keep original", "Sugar milk", "Vanilla milk", 
+            "Double chocolate"]
 
         // populate drop down
         for (var i = 0; i < glazeNames.length; i++) {
@@ -85,7 +90,8 @@ class Roll {
             let el = document.createElement("option");
             el.textContent = optn1;
             el.value = optn2;
-            const dropdown = this.element.querySelector('select').appendChild(el);
+            const dropdown = 
+                this.element.querySelector('select').appendChild(el);
         }
     }
 
@@ -122,7 +128,8 @@ class Roll {
         totalCost = +totalCost + +this.updatedRollPrice;
         totalCost = totalCost.toFixed(2);
         const cartDisplay = document.querySelector('.cart-items');
-        cartDisplay.innerText = numberOfItems + ' ' + pluralize() + '\n' + "Total: $" + totalCost;
+        cartDisplay.innerText = numberOfItems + ' ' + pluralize() + '\n' 
+            + "Total: $" + totalCost;
     }
 
 
@@ -130,7 +137,10 @@ class Roll {
 
         // referenced from https://stackoverflow.com/questions/64357088/how-to-display-text-for-some-amount-of-time-in-javascript
 
-        document.querySelector('.cart-popup').innerText = 'Added to cart: ' + '\n' + '\n' + this.rollType + '\n' + this.rollGlazing + ' glazing' + '\n' + 'Pack of ' + this.rollPackSize + '\n' + 'Price: $' + this.updatedRollPrice;
+        document.querySelector('.cart-popup').innerText = 'Added to cart: ' 
+            + '\n' + '\n' + this.rollType + '\n' + this.rollGlazing 
+            + ' glazing' + '\n' + 'Pack of ' + this.rollPackSize 
+            + '\n' + 'Price: $' + this.updatedRollPrice;
 
         setTimeout(function () {
             document.querySelector('.cart-popup').innerText = '';
